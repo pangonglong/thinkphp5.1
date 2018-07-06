@@ -1,0 +1,95 @@
+body { background: url("../images/body-bg.png"); }
+
+a:hover { color: #f4645f; }
+
+@keyframes width { 0%, 100% { transition-timing-function: cubic-bezier(0, 0.3, 0.65, 1); }
+  0% { width: 0; }
+  100% { width: 100%; } }
+.layui-wrap { max-width: 1200px; margin: 0 auto; position: relative; }
+
+.mg0 { margin: 0; }
+
+.pd0 { padding: 0 !important; }
+
+.pd15 { padding: 15px; }
+
+.layui-bg-white { background-color: white; }
+
+.layui-ftsz18 { font-size: 18px; }
+
+.layui-me { display: block; margin-bottom: 15px; }
+
+.header { width: 100%; height: 60px; position: fixed; top: 0; background-color: #393D49; }
+.header-logo { position: absolute; left: 5%; top: 0; }
+.header-logo img { width: 80px; height: 40px; padding: 10px; }
+@media screen and (max-width: 640px) { .header-logo { left: 0; } }
+.header .layui-nav { width: 75%; position: absolute; left: 15%; }
+.header-title { width: 100%; color: white; line-height: 60px; font-size: 16px; text-align: center; }
+
+#banner { margin-top: 60px; }
+
+.pull-left { float: left; }
+
+.pull-right { float: right; }
+
+.layui-tips { padding: 10px; margin: 10px 0; height: 25px; overflow: hidden; }
+.layui-tips .layui-tips-content { padding-left: 1%; line-height: 20px; display: inline-table; font-size: 16px; }
+.layui-tips .layui-tips-content li { margin-bottom: 5px; }
+
+.layui-learn { margin: 15px 0; text-align: center; font-weight: 300; font-size: 0; }
+.layui-learn .layui-learn-grid { padding: 30px; line-height: 24px; display: inline-block; font-size: 14px; text-align: left; vertical-align: top; cursor: pointer; background: #fff; transition: box-shadow .28s linear; -moz-transition: -moz-box-shadow .28s linear; -webkit-transition: -webkit-box-shadow .28s linear; }
+.layui-learn .layui-learn-grid:nth-child(2) { margin: 0 2%; }
+.layui-learn .layui-learn-grid:hover { box-shadow: 0 0 25px rgba(0, 0, 0, 0.25); outline: none; -moz-box-shadow: 0 0 25px rgba(0, 0, 0, 0.25); -webkit-box-shadow: 0 0 25px rgba(0, 0, 0, 0.25); }
+.layui-learn .layui-learn-grid .layui-field-title { border-color: #d2d2d2; margin: 10px 0 20px; border: none; border-top: 1px solid #e2e2e2; }
+.layui-learn .layui-learn-grid .layui-field-title legend { margin: 0 20px 20px 0; padding: 0 20px; text-align: center; }
+.layui-learn .layui-learn-grid .layui-field-title p { height: 72px; line-height: 24px; }
+
+.layui-article li { padding: 15px; background-color: white; margin-bottom: 15px; position: relative; }
+.layui-article li:hover .layui-article-progress { display: block; width: 100%; animation-duration: 3s; animation-name: width; background-image: linear-gradient(to right, #d61d1a, #ecab2b, #f2f02c, #65aa34, #1898d4, #0667a8, #522282, #a51a5c); background-image: -webkit-linear-gradient(to right, #d61d1a, #ecab2b, #f2f02c, #65aa34, #1898d4, #0667a8, #522282, #a51a5c); background-size: 24em 0.25em; height: 4px; position: absolute; bottom: 0; left: 0; }
+.layui-article-title { margin-bottom: 15px; }
+.layui-article-img { width: 100%; }
+.layui-article-info { line-height: 20px; color: #666; margin-bottom: 5px; }
+.layui-article-info span { height: 20px; line-height: 20px; padding-right: 15px; font-size: 12px; }
+.layui-article-info .layui-article-hot, .layui-article-info .layui-article-message, .layui-article-info .layui-article-praise { float: right; }
+.layui-article-description { height: 98px; line-height: 24px; overflow: hidden; color: #333; }
+.layui-article-column { width: 30px; height: 55px; position: absolute; font-size: 16px; text-align: center; right: 30px; top: 0; }
+.layui-article-column a { display: block; color: #fff; }
+.layui-article-column-bg1 { background: url("../images/column-bg1.png") no-repeat; }
+.layui-article-column-bg2 { background: url("../images/column-bg2.png") no-repeat; }
+.layui-article-column-bg3 { background: url("../images/column-bg3.png") no-repeat; }
+.layui-article-column-bg4 { background: url("../images/column-bg4.png") no-repeat; }
+.layui-article .layui-tags li { margin-bottom: 0; border-radius: 10px; }
+.layui-article-progress { display: none; }
+
+.layui-tags { background-color: white; margin-bottom: 15px; }
+.layui-tags h2 { font-weight: 400; font-size: 1rem; color: #E74C3C; padding-bottom: 5px; border-bottom: 1px solid #5FB878; margin-bottom: 10px; }
+.layui-tags ul li { display: inline-block; margin: 0 5px 5px 0; padding: 2px 6px; line-height: 1.3rem; }
+.layui-tags ul li { background-color: #15a287; opacity: 0.8; }
+.layui-tags ul li a { color: #fff; }
+.layui-tags ul li:hover { opacity: 1; }
+
+.layui-article-like { background-color: #fff; margin-bottom: 15px; }
+.layui-article-like h2 { font-weight: 400; font-size: 1rem; color: #E74C3C; padding-bottom: 5px; border-bottom: 1px solid #5FB878; margin-bottom: 10px; }
+.layui-article-like ol { margin: 0; }
+.layui-article-like ol li { line-height: 32px; white-space: nowrap; overflow: hidden; list-style: decimal-leading-zero inside; color: #009688; font-style: oblique; }
+.layui-article-like ol li a { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-style: normal; }
+
+.layui-links { background-color: #fff; margin-bottom: 15px; }
+.layui-links h2 { font-weight: 400; font-size: 1rem; color: #E74C3C; padding-bottom: 5px; border-bottom: 1px solid #5FB878; margin-bottom: 10px; }
+.layui-links li { display: inline-block; margin: 0 5px 5px 0; padding: 2px 6px; line-height: 1.3rem; }
+.layui-links li:hover { background-color: #15a287; }
+.layui-links li:hover a { color: #fff; }
+
+.layui-resume { background-color: #fff; }
+.layui-resume-head { background-color: #15a287; text-align: center; padding: 10px 0; }
+.layui-resume-head-img { padding: 3px; background-color: #eee; border-radius: 50%; border: 1px solid #aaa; overflow: hidden; text-align: center; }
+.layui-resume-content .layui-resume-info { margin-bottom: 15px; }
+.layui-resume-content .layui-resume-info .layui-resume-title { font-size: 16px; font-weight: bold; padding: 10px; margin-bottom: 15px; border-bottom: 1px solid #ccc; }
+.layui-resume-content .layui-resume-info ul { padding-left: 15px; }
+.layui-resume-content .layui-resume-info ul li { margin: 5px 0; }
+.layui-resume-content .layui-resume-info ul li .skill { min-height: 20px; line-height: 20px; margin-bottom: 3px; }
+.layui-resume-content .layui-resume-info ul li .skill span { font-size: 16px; }
+
+.footer { padding: 15px; text-align: center; border-top: 1px solid #E74C3C; background-color: #393D49; line-height: 24px; color: white; }
+
+/*# sourceMappingURL=global.css.map */
