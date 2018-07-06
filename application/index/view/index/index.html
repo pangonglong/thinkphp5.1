@@ -1,0 +1,284 @@
+<!-- 一行代码，一行诗---PGL是一位程序员 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keyword" content="PGL博客-PHP程序员客栈">
+    <meta name="description" content="PGL博客-PHP程序员客栈">
+    <meta name="author" content="814521360@qq.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PGL博客-PHP程序员客栈</title>
+    <link href="/favicon.ico" rel="icon" type="image/x-icon">
+    {load href="/static/layui/css/layui.css"}
+    {load href="/static/css/global.css"}
+</head>
+<body>
+
+<!-- header -->
+<div class="layui-header header">
+    <div class="layui-wrap">
+        <a href="#" class="header-logo"><img src="./images/logo.png" alt="PGL博客-PHP程序员客栈"></a>
+        <ul class="layui-nav layui-hide-xs" lay-filter="">
+            <li class="layui-nav-item"><a href="index.html"><i class="layui-icon layui-icon-home"></i> 首页</a></li>
+            <li class="layui-nav-item"><a href="#"><i class="layui-icon layui-icon-list"></i> 资讯</a></li>
+            <li class="layui-nav-item"><a href="#"><i class="layui-icon layui-icon-read"></i> 技术</a></li>
+            <li class="layui-nav-item"><a href="#"><i class="layui-icon layui-icon-release"></i> 折腾</a></li>
+            <li class="layui-nav-item"><a href="#"><i class="layui-icon layui-icon-set"></i> 工具</a></li>
+            <li class="layui-nav-item"><a href="index-me.html"><img src="./images/thumb.jpg" class="layui-nav-img"> Pick Me</a></li>
+        </ul>
+        <div class="header-title">PGL博客-PHP程序员客栈</div>
+    </div>
+</div>
+
+<!-- banner -->
+<div class="layui-row">
+    <div class="layui-carousel" id="banner">
+        <div carousel-item>
+            <div><img src="./images/banner01.jpg" alt=""></div>
+            <div><img src="./images/banner02.jpg" alt=""></div>
+            <div><img src="./images/banner03.jpg" alt=""></div>
+        </div>
+    </div>
+</div>
+
+<div class="layui-wrap">
+    <!-- tips -->
+    <div class="layui-tips layui-row layui-col-space20">
+        <div class="layui-col-sm12 layui-bg-white">
+            <i class="layui-icon layui-icon-speaker layui-ftsz18"></i>
+            <ul class="layui-tips-content">
+                <li><a href="#">第1条公告</a></li>
+                <li><a href="#">第2条公告</a></li>
+                <li><a href="#">第3条公告</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <ul class="layui-learn layui-row layui-col-space20">
+        <li class="layui-col-sm12 layui-col-md4">
+            <div class="layui-learn-grid">
+                <fieldset class="layui-elem-field layui-field-title">
+                    <legend>业精于勤</legend>
+                    <p>“业精于勤荒于嬉”，精深的业技靠的是勤学、刻苦努力，靠的是争分夺秒的勤学苦练才会有精深的技术。得在认真，失在随便。</p>
+                </fieldset>
+            </div>
+        </li>
+        <li class="layui-col-sm12 layui-col-md4">
+            <div class="layui-learn-grid">
+                <fieldset class="layui-elem-field layui-field-title">
+                    <legend>业精于勤</legend>
+                    <p>“业精于勤荒于嬉”，精深的业技靠的是勤学、刻苦努力，靠的是争分夺秒的勤学苦练才会有精深的技术。得在认真，失在随便。</p>
+                </fieldset>
+            </div>
+        </li>
+        <li class="layui-col-sm12 layui-col-md4">
+            <div class="layui-learn-grid">
+                <fieldset class="layui-elem-field layui-field-title">
+                    <legend>业精于勤</legend>
+                    <p>“业精于勤荒于嬉”，精深的业技靠的是勤学、刻苦努力，靠的是争分夺秒的勤学苦练才会有精深的技术。得在认真，失在随便。</p>
+                </fieldset>
+            </div>
+        </li>
+    </ul>
+    <!-- content -->
+    <div class="layui-row layui-col-space20 mg0">
+
+        <div class="layui-col-sm12 layui-col-md8">
+            <ul class="layui-article">
+                <li>
+                    <h2 class="layui-article-title"><a href="3">Centos7.3搭建LNMP（文章二）</a></h2>
+                    <div class="layui-row layui-col-space15">
+                        <div class="layui-col-sm12 layui-col-md4">
+                            <a href="#">
+                                <img src="./images/article.jpg" alt="" class="layui-article-img" height="150">
+                            </a>
+                        </div>
+                        <div class="layui-col-sm12 layui-col-md8">
+                            <h3 class="layui-article-info">
+									<span>
+										<i class="layui-icon layui-icon-username"></i> PGL
+									</span>
+                                <span>
+										<i class="layui-icon layui-icon-log"></i> 2018-06-26
+									</span>
+                                <span class="layui-article-message">
+										<i class="layui-icon layui-icon-dialogue"></i> 3
+									</span>
+                                <span class="layui-article-praise">
+										<i class="layui-icon layui-icon-praise"></i> 55
+									</span>
+                                <span class="layui-article-hot">
+										<i class="layui-icon layui-icon-fire"></i> 300 ℃
+									</span>
+                            </h3>
+                            <div class="layui-article-description">
+                                本文将介绍如何通过header发送自定义数据。发送请求时，除了可以使用$_GET/$_POST发送数据，也可以把数据放在header中传输过去。具体请看下面详细步骤 # 废话不多说，直接上代码本文将介绍如何通过header发送自定义数据。发送请求时，除了可以使用
+                            </div>
+                            <div class="pd0 layui-tags">
+                                <ul>
+                                    <li><a href="#">PHP</a></li>
+                                    <li><a href="#">程序员</a></li>
+                                    <li><a href="#">Laravel</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-article-column layui-article-column-bg1 layui-hide-xs"><a href="#">工具</a></div>
+                    <div class="layui-article-progress"></div>
+                </li>
+                <li>
+                    <h2 class="layui-article-title"><a href="3">Centos7.3搭建LNMP（文章二）</a></h2>
+                    <div class="layui-row layui-col-space15">
+                        <div class="layui-col-sm12 layui-col-md4">
+                            <a href="#">
+                                <img src="./images/article.jpg" alt="" class="layui-article-img" height="150">
+                            </a>
+                        </div>
+                        <div class="layui-col-sm12 layui-col-md8">
+                            <h3 class="layui-article-info">
+									<span>
+										<i class="layui-icon layui-icon-username"></i> PGL
+									</span>
+                                <span>
+										<i class="layui-icon layui-icon-log"></i> 2018-06-26
+									</span>
+                                <span class="layui-article-message">
+										<i class="layui-icon layui-icon-dialogue"></i> 3
+									</span>
+                                <span class="layui-article-praise">
+										<i class="layui-icon layui-icon-praise"></i> 55
+									</span>
+                                <span class="layui-article-hot">
+										<i class="layui-icon layui-icon-fire"></i> 300 ℃
+									</span>
+                            </h3>
+                            <div class="layui-article-description">
+                                本文将介绍如何通过header发送自定义数据。发送请求时，除了可以使用$_GET/$_POST发送数据，也可以把数据放在header中传输过去。具体请看下面详细步骤 # 废话不多说，直接上代码本文将介绍如何通过header发送自定义数据。发送请求时，除了可以使用
+                            </div>
+                            <div class="pd0 layui-tags">
+                                <ul>
+                                    <li><a href="#">PHP</a></li>
+                                    <li><a href="#">程序员</a></li>
+                                    <li><a href="#">Laravel</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-article-column layui-article-column-bg2 layui-hide-xs"><a href="#">资讯</a></div>
+                    <div class="layui-article-progress"></div>
+                </li>
+                <li>
+                    <h2 class="layui-article-title"><a href="3">Centos7.3搭建LNMP（文章二）</a></h2>
+                    <div class="layui-row layui-col-space15">
+                        <div class="layui-col-sm12 layui-col-md4">
+                            <a href="#">
+                                <img src="./images/article.jpg" alt="" class="layui-article-img" height="150">
+                            </a>
+                        </div>
+                        <div class="layui-col-sm12 layui-col-md8">
+                            <h3 class="layui-article-info">
+									<span>
+										<i class="layui-icon layui-icon-username"></i> PGL
+									</span>
+                                <span>
+										<i class="layui-icon layui-icon-log"></i> 2018-06-26
+									</span>
+                                <span class="layui-article-message">
+										<i class="layui-icon layui-icon-dialogue"></i> 3
+									</span>
+                                <span class="layui-article-praise">
+										<i class="layui-icon layui-icon-praise"></i> 55
+									</span>
+                                <span class="layui-article-hot">
+										<i class="layui-icon layui-icon-fire"></i> 300 ℃
+									</span>
+                            </h3>
+                            <div class="layui-article-description">
+                                本文将介绍如何通过header发送自定义数据。发送请求时，除了可以使用$_GET/$_POST发送数据，也可以把数据放在header中传输过去。具体请看下面详细步骤 # 废话不多说，直接上代码本文将介绍如何通过header发送自定义数据。发送请求时，除了可以使用
+                            </div>
+                            <div class="pd0 layui-tags">
+                                <ul>
+                                    <li><a href="#">PHP</a></li>
+                                    <li><a href="#">程序员</a></li>
+                                    <li><a href="#">Laravel</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-article-column layui-article-column-bg3 layui-hide-xs"><a href="#">技术</a></div>
+                    <div class="layui-article-progress"></div>
+                </li>
+            </ul>
+        </div>
+        <!-- silder -->
+        <div class="layui-col-sm12 layui-col-md4">
+            <a href="#" title="PGL是一位程序员" class="layui-me layui-hide-xs"><img src="./images/me.jpg" alt="PGL是一位程序员"></a>
+
+            <div class="layui-tags pd15">
+                <h2 class="layui-right-h2">热门标签</h2>
+                <ul>
+                    <li><a href="#">PHP</a></li>
+                    <li><a href="#">程序员</a></li>
+                    <li><a href="#">Laravel</a></li>
+                    <li><a href="#">PHP</a></li>
+                    <li><a href="#">程序员</a></li>
+                    <li><a href="#">PHP</a></li>
+                    <li><a href="#">程序员</a></li>
+                    <li><a href="#">Laravel</a></li>
+                </ul>
+            </div>
+            <div class="layui-article-like pd15">
+                <h2 class="layui-right-h2">猜你喜欢</h2>
+                <ol type="1">
+                    <li>
+                        <a href="#">Centos7.3搭建LNMP（文章二）</a>
+                        <span class="layui-article-hot">
+								<i class="layui-icon layui-icon-chart"></i> 856
+							</span>
+                    </li>
+                    <li><a href="#">Centos7.3搭建LNMP（文章二）</a></li>
+                    <li><a href="#">Centos7.3搭建LNMP（文章二）</a></li>
+                    <li><a href="#">Centos7.3搭建LNMP（文章二）</a></li>
+                    <li><a href="#">Centos7.3搭建LNMP（文章二）</a></li>
+                    <li><a href="#">Centos7.3搭建LNMP（文章二）</a></li>
+                    <li><a href="#">Centos7.3搭建LNMP（文章二）</a></li>
+                    <li><a href="#">Centos7.3搭建LNMP（文章二）</a></li>
+                </ol>
+            </div>
+            <div class="layui-links pd15">
+                <h2 class="layui-right-h2">友情链接</h2>
+                <ul>
+                    <li><a href="#">PHP</a></li>
+                    <li><a href="#">程序员</a></li>
+                    <li><a href="#">Laravel</a></li>
+                    <li><a href="#">PHP</a></li>
+                    <li><a href="#">程序员</a></li>
+                    <li><a href="#">PHP</a></li>
+                    <li><a href="#">程序员</a></li>
+                    <li><a href="#">Laravel</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="footer">
+    <div class="layui-wrap">
+        <div class="layui-row">
+            <div class="layui-col-sm12">
+                Copyright © 2016-2018 PGL的博客.All Rights Reserved. 皖ICP备17011971号
+            </div>
+        </div>
+    </div>
+</div>
+
+{load href="/static/layui/layui.js" /}
+<script>
+    layui.config({
+        base: './js/module/'
+    }).use('index');
+</script>
+</body>
+</html>
